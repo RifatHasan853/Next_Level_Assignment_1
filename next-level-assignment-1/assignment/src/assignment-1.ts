@@ -9,9 +9,7 @@ function formatString(text: string, toUpper?: boolean): string {
   }
   
 
-  console.log(formatString("Hello Programming Hero"));        
-  console.log(formatString("Ki Assy jibony", true));  
-  console.log(formatString("Is Ai will Replace web Developers?!", false)); 
+ 
 
 
 
@@ -34,15 +32,15 @@ function filterByRating(items: { title: string; rating: number }[]): { title: st
     { title: "No money ,No honey", rating: 5.0 }
   ];
   
-  console.log(filterByRating(books));
+ 
 
   
 
   function concatenateArrays<T>(...arrays: T[][]): T[]{
     return ([] as T[]).concat(...arrays)
   }
-   console.log (concatenateArrays(["a", "b"], ["c"]));       
-  console.log(concatenateArrays([1, 2], [3, 4], [5]));  
+   //console.log (concatenateArrays(["a", "b"], ["c"]));       
+  //console.log(concatenateArrays([1, 2], [3, 4], [5]));  
 
 
 
@@ -84,8 +82,7 @@ function processValue(value: number|string):number{
     }
 }
 
-console.log(processValue("ProgrammingHero"))
-console.log(processValue(15))
+
 
 
 
@@ -119,7 +116,7 @@ const products = [
   { name: "Bag", price: 50 }
 ];
 
-console.log(getMostExpensiveProduct(products));
+
 
 
 
@@ -144,8 +141,8 @@ function getDayType(day: Day): string{
   }
 }
 
-console.log(getDayType(Day.Monday));  
-console.log(getDayType(Day.Sunday)); 
+//console.log(getDayType(Day.Monday));  
+//console.log(getDayType(Day.Sunday)); 
 
 
 
@@ -154,7 +151,7 @@ async function squareAsync(n: number): Promise<number> {
   return new Promise((squarenum, reject) => {
     setTimeout(() => {
       if (n < 0) {
-        reject(new Error("Negative number not allowed"));
+        reject(new Error("Negative number dawya jaby na"));
       } else {
         squarenum(n * n);
       }
@@ -163,10 +160,3 @@ async function squareAsync(n: number): Promise<number> {
 }
 
 
-squareAsync(4)
-  .then(console.log)        
-  .catch(console.error);     
-
-squareAsync(-3)
-  .then(console.log)
-  .catch(console.error);
